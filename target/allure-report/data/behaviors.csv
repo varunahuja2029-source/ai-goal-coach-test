@@ -1,0 +1,4 @@
+"BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
+"0","AI Goal Coach API","0","POST /api/coach","5","0","Business Logic & Boundaries","0"
+"0","AI Goal Coach API","1","POST /api/coach","2","0","Schema & Contract Validation","0"
+"0","AI Goal Coach API","0","POST /api/coach","4","0","Adversarial & Edge Cases","0"

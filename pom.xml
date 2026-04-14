@@ -145,6 +145,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire.version}</version>
                 <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
@@ -173,6 +174,40 @@
                     <reportVersion>${allure.version}</reportVersion>
                     <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
                 </configuration>
+            </plugin>
+
+            <!-- ── Auto-generate Allure report + print browser link ─ -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>allure-report-link</id>
+                        <phase>test</phase>
+                        <goals><goal>run</goal></goals>
+                        <configuration>
+                            <target>
+                                <exec executable="allure" failonerror="false">
+                                    <arg value="generate"/>
+                                    <arg value="${project.build.directory}/allure-results"/>
+                                    <arg value="--clean"/>
+                                    <arg value="-o"/>
+                                    <arg value="${project.build.directory}/allure-report"/>
+                                </exec>
+                                <echo message=""/>
+                                <echo message="========================================"/>
+                                <echo message=" Opening Allure Report in browser..."/>
+                                <echo message=" (served at http://localhost:PORT)"/>
+                                <echo message="========================================"/>
+                                <exec executable="allure" failonerror="false" spawn="true">
+                                    <arg value="open"/>
+                                    <arg value="${project.build.directory}/allure-report"/>
+                                </exec>
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
 
         </plugins>

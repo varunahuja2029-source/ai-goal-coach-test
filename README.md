@@ -121,13 +121,34 @@ npm install -g allure-commandline
 
 ### 1. Start the SUT (Flask API)
 
-Ensure the AI Goal Coach Flask service is running on port 8002 before running tests:
+Ensure the AI Goal Coach Flask service is running on port 8002 before running tests.
+
+**Option A — with a virtual environment (recommended):**
 
 ```bash
-# Example – adjust to your Flask app entry point
-python app.py
-# or
-flask run --port 8002
+cd sut-server
+python3 -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+python3 app.py
+```
+
+**Option B — without a virtual environment (quick install):**
+
+If you skip the venv, install via `pip3` and start with `python3` directly. The `flask` CLI may not be on your PATH, so avoid `flask run`:
+
+```bash
+cd sut-server
+pip3 install -r requirements.txt
+python3 app.py
+```
+
+The server listens on `http://127.0.0.1:8002`. Verify it is up before running the test suite:
+
+```bash
+curl -s -X POST http://localhost:8002/api/coach \
+  -H "Content-Type: application/json" \
+  -d '{"q":"upskill"}'
 ```
 
 ### 2. Run all tests

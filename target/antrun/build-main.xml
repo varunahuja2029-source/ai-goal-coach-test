@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <exec failonerror="false" executable="allure">
+      <arg value="generate" />
+      <arg value="/Users/varunahuja/test-ai-agent/target/allure-results" />
+      <arg value="--clean" />
+      <arg value="-o" />
+      <arg value="/Users/varunahuja/test-ai-agent/target/allure-report" />
+    </exec>
+    <echo message="" />
+    <echo message="========================================" />
+    <echo message=" Opening Allure Report in browser..." />
+    <echo message=" (served at http://localhost:PORT)" />
+    <echo message="========================================" />
+    <exec spawn="true" failonerror="false" executable="allure">
+      <arg value="open" />
+      <arg value="/Users/varunahuja/test-ai-agent/target/allure-report" />
+    </exec>
+  </target>
+</project>

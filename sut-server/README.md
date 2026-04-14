@@ -16,6 +16,15 @@ source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+### No virtual environment (quick install)
+
+If you skip the venv and install directly via `pip3`, the `flask` CLI may not be on your PATH. Use `python3 app.py` to start the server instead:
+
+```bash
+pip3 install -r requirements.txt
+python3 app.py
+```
+
 ## Run the server (port 8002)
 
 ```bash
@@ -26,7 +35,7 @@ Or manually:
 
 ```bash
 source .venv/bin/activate
-python app.py
+python3 app.py
 ```
 
 Listen address: `http://127.0.0.1:8002`

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="12" passed="11" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-14T00:04:00 IST" name="AI Goal Coach – Full Regression Suite" finished-at="2026-04-14T00:04:05 IST" duration-ms="5306">
+  <suite started-at="2026-04-15T00:38:35 IST" name="AI Goal Coach – Full Regression Suite" finished-at="2026-04-15T00:38:41 IST" duration-ms="5977">
     <groups>
     </groups>
-    <test started-at="2026-04-14T00:04:00 IST" name="Schema and Contract Validation" finished-at="2026-04-14T00:04:05 IST" duration-ms="4629">
+    <test started-at="2026-04-15T00:38:35 IST" name="Schema and Contract Validation" finished-at="2026-04-15T00:38:40 IST" duration-ms="4680">
       <class name="com.aigoalcoach.tests.GoalCoachApiTests">
-        <test-method signature="testValidSchema()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@22a10ac6]" started-at="2026-04-14T00:04:00 IST" name="testValidSchema" description="TC-01 | All JSON schema fields exist with correct data types" finished-at="2026-04-14T00:04:04 IST" duration-ms="4244" status="PASS">
+        <test-method signature="testValidSchema()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@7f37b6d9]" started-at="2026-04-15T00:38:35 IST" name="testValidSchema" description="TC-01 | All JSON schema fields exist with correct data types" finished-at="2026-04-15T00:38:40 IST" duration-ms="4200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidSchema -->
-        <test-method signature="testMissingFieldBug()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@22a10ac6]" started-at="2026-04-14T00:04:04 IST" name="testMissingFieldBug" description="TC-02 | [BUG-002] confidence_score missing from response – SIMULATED FAIL" finished-at="2026-04-14T00:04:04 IST" duration-ms="75" status="FAIL">
+        <test-method signature="testMissingFieldBug()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@7f37b6d9]" started-at="2026-04-15T00:38:40 IST" name="testMissingFieldBug" description="TC-02 | [BUG-002] confidence_score missing from response – SIMULATED FAIL" finished-at="2026-04-15T00:38:40 IST" duration-ms="87" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[[[BUG-002] confidence_score should be MISSING from this response (simulated defect – this assertion deliberately captures the bug state)] 
@@ -61,55 +61,55 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMissingFieldBug -->
-        <test-method signature="testInvalidDataType()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@22a10ac6]" started-at="2026-04-14T00:04:04 IST" name="testInvalidDataType" description="TC-03 | confidence_score is Integer, not String or Float" finished-at="2026-04-14T00:04:05 IST" duration-ms="54" status="PASS">
+        <test-method signature="testInvalidDataType()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@7f37b6d9]" started-at="2026-04-15T00:38:40 IST" name="testInvalidDataType" description="TC-03 | confidence_score is Integer, not String or Float" finished-at="2026-04-15T00:38:40 IST" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidDataType -->
       </class> <!-- com.aigoalcoach.tests.GoalCoachApiTests -->
     </test> <!-- Schema and Contract Validation -->
-    <test started-at="2026-04-14T00:04:05 IST" name="Business Logic and Boundaries" finished-at="2026-04-14T00:04:05 IST" duration-ms="333">
+    <test started-at="2026-04-15T00:38:40 IST" name="Business Logic and Boundaries" finished-at="2026-04-15T00:38:41 IST" duration-ms="443">
       <class name="com.aigoalcoach.tests.GoalCoachApiTests">
-        <test-method signature="testHappyPathSales()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@58437801]" started-at="2026-04-14T00:04:05 IST" name="testHappyPathSales" description="TC-04 | Happy path – &#039;sales&#039; produces confident, bounded plan" finished-at="2026-04-14T00:04:05 IST" duration-ms="68" status="PASS">
+        <test-method signature="testHappyPathSales()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@5399f6c5]" started-at="2026-04-15T00:38:40 IST" name="testHappyPathSales" description="TC-04 | Happy path – &#039;sales&#039; produces confident, bounded plan" finished-at="2026-04-15T00:38:40 IST" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHappyPathSales -->
-        <test-method signature="testHappyPathUpskill()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@58437801]" started-at="2026-04-14T00:04:05 IST" name="testHappyPathUpskill" description="TC-05 | Happy path – &#039;upskill&#039; produces confident, bounded plan" finished-at="2026-04-14T00:04:05 IST" duration-ms="79" status="PASS">
+        <test-method signature="testHappyPathUpskill()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@5399f6c5]" started-at="2026-04-15T00:38:40 IST" name="testHappyPathUpskill" description="TC-05 | Happy path – &#039;upskill&#039; produces confident, bounded plan" finished-at="2026-04-15T00:38:40 IST" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHappyPathUpskill -->
-        <test-method signature="testArrayLowerBound()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@58437801]" started-at="2026-04-14T00:04:05 IST" name="testArrayLowerBound" description="TC-06 | key_results contains &gt;= 3 items (lower bound)" finished-at="2026-04-14T00:04:05 IST" duration-ms="62" status="PASS">
+        <test-method signature="testArrayLowerBound()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@5399f6c5]" started-at="2026-04-15T00:38:40 IST" name="testArrayLowerBound" description="TC-06 | key_results contains &gt;= 3 items (lower bound)" finished-at="2026-04-15T00:38:40 IST" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testArrayLowerBound -->
-        <test-method signature="testArrayUpperBound()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@58437801]" started-at="2026-04-14T00:04:05 IST" name="testArrayUpperBound" description="TC-07 | key_results contains &lt;= 5 items (upper bound)" finished-at="2026-04-14T00:04:05 IST" duration-ms="51" status="PASS">
+        <test-method signature="testArrayUpperBound()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@5399f6c5]" started-at="2026-04-15T00:38:40 IST" name="testArrayUpperBound" description="TC-07 | key_results contains &lt;= 5 items (upper bound)" finished-at="2026-04-15T00:38:41 IST" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testArrayUpperBound -->
-        <test-method signature="testArrayViolationBug()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@58437801]" started-at="2026-04-14T00:04:05 IST" name="testArrayViolationBug" description="TC-08 | [BUG-001] key_results exceeds 5 items – SIMULATED FAIL" finished-at="2026-04-14T00:04:05 IST" duration-ms="52" status="PASS">
+        <test-method signature="testArrayViolationBug()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@5399f6c5]" started-at="2026-04-15T00:38:41 IST" name="testArrayViolationBug" description="TC-08 | [BUG-001] key_results exceeds 5 items – SIMULATED FAIL" finished-at="2026-04-15T00:38:41 IST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testArrayViolationBug -->
       </class> <!-- com.aigoalcoach.tests.GoalCoachApiTests -->
     </test> <!-- Business Logic and Boundaries -->
-    <test started-at="2026-04-14T00:04:05 IST" name="Adversarial and Edge Cases" finished-at="2026-04-14T00:04:05 IST" duration-ms="258">
+    <test started-at="2026-04-15T00:38:41 IST" name="Adversarial and Edge Cases" finished-at="2026-04-15T00:38:41 IST" duration-ms="687">
       <class name="com.aigoalcoach.tests.GoalCoachApiTests">
-        <test-method is-config="true" signature="configureSuite()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@76464795]" started-at="2026-04-14T00:03:58 IST" name="configureSuite" finished-at="2026-04-14T00:04:00 IST" duration-ms="1620" status="PASS">
+        <test-method is-config="true" signature="configureSuite()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@58437801]" started-at="2026-04-15T00:38:34 IST" name="configureSuite" finished-at="2026-04-15T00:38:35 IST" duration-ms="1676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureSuite -->
-        <test-method signature="testGibberishInput()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@76464795]" started-at="2026-04-14T00:04:05 IST" name="testGibberishInput" description="TC-09 | Gibberish input yields confidence_score &lt;= 3" finished-at="2026-04-14T00:04:05 IST" duration-ms="59" status="PASS">
+        <test-method signature="testGibberishInput()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@58437801]" started-at="2026-04-15T00:38:41 IST" name="testGibberishInput" description="TC-09 | Gibberish input yields confidence_score &lt;= 3" finished-at="2026-04-15T00:38:41 IST" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGibberishInput -->
-        <test-method signature="testEmptyString()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@76464795]" started-at="2026-04-14T00:04:05 IST" name="testEmptyString" description="TC-10 | Empty string input returns safe sub-threshold fallback (score &lt; 8)" finished-at="2026-04-14T00:04:05 IST" duration-ms="49" status="PASS">
+        <test-method signature="testEmptyString()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@58437801]" started-at="2026-04-15T00:38:41 IST" name="testEmptyString" description="TC-10 | Empty string input returns safe sub-threshold fallback (score &lt; 8)" finished-at="2026-04-15T00:38:41 IST" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmptyString -->
-        <test-method signature="testPromptInjection()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@76464795]" started-at="2026-04-14T00:04:05 IST" name="testPromptInjection" description="TC-11 | Prompt injection is deflected to fallback scaffold (score &lt; 8 or 4xx)" finished-at="2026-04-14T00:04:05 IST" duration-ms="65" status="PASS">
+        <test-method signature="testPromptInjection()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@58437801]" started-at="2026-04-15T00:38:41 IST" name="testPromptInjection" description="TC-11 | Prompt injection is deflected to fallback scaffold (score &lt; 8 or 4xx)" finished-at="2026-04-15T00:38:41 IST" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPromptInjection -->
-        <test-method signature="testResponsePerformance()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@76464795]" started-at="2026-04-14T00:04:05 IST" name="testResponsePerformance" description="TC-12 | API response time is &lt; 1500 ms" finished-at="2026-04-14T00:04:05 IST" duration-ms="68" status="PASS">
+        <test-method signature="testResponsePerformance()[pri:0, instance:com.aigoalcoach.tests.GoalCoachApiTests@58437801]" started-at="2026-04-15T00:38:41 IST" name="testResponsePerformance" description="TC-12 | API response time is &lt; 1500 ms" finished-at="2026-04-15T00:38:41 IST" duration-ms="199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResponsePerformance -->

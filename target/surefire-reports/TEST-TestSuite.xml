@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="10.849" tests="12" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="11.253" tests="12" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/varunahuja/test-ai-agent/target/surefire/surefirebooter-20260414000353712_3.jar /Users/varunahuja/test-ai-agent/target/surefire 2026-04-14T00-03-53_517-jvmRun1 surefire-20260414000353712_1tmp surefire_0-20260414000353712_2tmp"/>
+    <property name="sun.java.command" value="/Users/varunahuja/test-ai-agent/target/surefire/surefirebooter-20260415003829050_3.jar /Users/varunahuja/test-ai-agent/target/surefire 2026-04-15T00-38-28_732-jvmRun1 surefire-20260415003829050_1tmp surefire_0-20260415003829050_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/varunahuja/test-ai-agent/target/test-classes:/Users/varunahuja/test-ai-agent/target/classes:/Users/varunahuja/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/varunahuja/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/varunahuja/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/varunahuja/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/varunahuja/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/varunahuja/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/varunahuja/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/varunahuja/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/varunahuja/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/varunahuja/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/varunahuja/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/varunahuja/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/varunahuja/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/varunahuja/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/varunahuja/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/varunahuja/.m2/repository/io/rest-assured/json-schema-validator/5.4.0/json-schema-validator-5.4.0.jar:/Users/varunahuja/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/varunahuja/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/varunahuja/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/varunahuja/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/varunahuja/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/varunahuja/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/varunahuja/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/varunahuja/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/varunahuja/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/varunahuja/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/varunahuja/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/varunahuja/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/varunahuja/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/varunahuja/.m2/repository/com/google/guava/guava/32.0.1-jre/guava-32.0.1-jre.jar:/Users/varunahuja/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/varunahuja/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/varunahuja/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/varunahuja/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/varunahuja/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/varunahuja/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/varunahuja/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/varunahuja/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/varunahuja/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/varunahuja/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/Users/varunahuja/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/Users/varunahuja/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/Users/varunahuja/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:/Users/varunahuja/.m2/repository/org/assertj/assertj-core/3.26.0/assertj-core-3.26.0.jar:/Users/varunahuja/.m2/repository/net/bytebuddy/byte-buddy/1.14.16/byte-buddy-1.14.16.jar:/Users/varunahuja/.m2/repository/io/qameta/allure/allure-testng/2.27.0/allure-testng-2.27.0.jar:/Users/varunahuja/.m2/repository/io/qameta/allure/allure-java-commons/2.27.0/allure-java-commons-2.27.0.jar:/Users/varunahuja/.m2/repository/io/qameta/allure/allure-model/2.27.0/allure-model-2.27.0.jar:/Users/varunahuja/.m2/repository/io/qameta/allure/allure-test-filter/2.27.0/allure-test-filter-2.27.0.jar:/Users/varunahuja/.m2/repository/io/qameta/allure/allure-rest-assured/2.27.0/allure-rest-assured-2.27.0.jar:/Users/varunahuja/.m2/repository/io/qameta/allure/allure-attachments/2.27.0/allure-attachments-2.27.0.jar:/Users/varunahuja/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/Users/varunahuja/.m2/repository/org/slf4j/slf4j-simple/2.0.13/slf4j-simple-2.0.13.jar:"/>
@@ -30,8 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="api.base.url" value="http://localhost:8002"/>
-    <property name="surefire.real.class.path" value="/Users/varunahuja/test-ai-agent/target/surefire/surefirebooter-20260414000353712_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/varunahuja/test-ai-agent/target/surefire/surefirebooter-20260415003829050_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="17.0.16+8"/>
@@ -59,7 +58,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testValidSchema" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="4.41">
+  <testcase name="testValidSchema" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="4.413">
     <system-out><![CDATA[...
 ... TestNG 7.9.0 by Cédric Beust (cedric@beust.com)
 ...
@@ -82,7 +81,7 @@ Body:
 }
 HTTP/1.1 200 OK
 Server: Werkzeug/3.1.8 Python/3.9.6
-Date: Mon, 13 Apr 2026 18:34:03 GMT
+Date: Tue, 14 Apr 2026 19:08:39 GMT
 Content-Type: application/json
 Content-Length: 319
 Connection: close
@@ -102,7 +101,7 @@ SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="testMissingFieldBug" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.095">
+  <testcase name="testMissingFieldBug" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.106">
     <failure message="[[BUG-002] confidence_score should be MISSING from this response (simulated defect – this assertion deliberately captures the bug state)] &#10;expected: null&#10; but was: 5" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 [[BUG-002] confidence_score should be MISSING from this response (simulated defect – this assertion deliberately captures the bug state)] 
 expected: null
@@ -158,7 +157,7 @@ Body:
 }
 HTTP/1.1 200 OK
 Server: Werkzeug/3.1.8 Python/3.9.6
-Date: Mon, 13 Apr 2026 18:34:04 GMT
+Date: Tue, 14 Apr 2026 19:08:40 GMT
 Content-Type: application/json
 Content-Length: 308
 Connection: close
@@ -174,7 +173,7 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testInvalidDataType" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.053">
+  <testcase name="testInvalidDataType" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.07">
     <system-out><![CDATA[Request method:	POST
 Request URI:	http://localhost:8002/api/coach
 Proxy:			<none>
@@ -192,7 +191,7 @@ Body:
 }
 HTTP/1.1 200 OK
 Server: Werkzeug/3.1.8 Python/3.9.6
-Date: Mon, 13 Apr 2026 18:34:04 GMT
+Date: Tue, 14 Apr 2026 19:08:40 GMT
 Content-Type: application/json
 Content-Length: 308
 Connection: close
@@ -208,7 +207,7 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testHappyPathSales" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.09">
+  <testcase name="testHappyPathSales" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.06">
     <system-out><![CDATA[Request method:	POST
 Request URI:	http://localhost:8002/api/coach
 Proxy:			<none>
@@ -226,7 +225,7 @@ Body:
 }
 HTTP/1.1 200 OK
 Server: Werkzeug/3.1.8 Python/3.9.6
-Date: Mon, 13 Apr 2026 18:34:05 GMT
+Date: Tue, 14 Apr 2026 19:08:40 GMT
 Content-Type: application/json
 Content-Length: 311
 Connection: close
@@ -242,7 +241,7 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testHappyPathUpskill" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.065">
+  <testcase name="testHappyPathUpskill" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.055">
     <system-out><![CDATA[Request method:	POST
 Request URI:	http://localhost:8002/api/coach
 Proxy:			<none>
@@ -260,7 +259,7 @@ Body:
 }
 HTTP/1.1 200 OK
 Server: Werkzeug/3.1.8 Python/3.9.6
-Date: Mon, 13 Apr 2026 18:34:05 GMT
+Date: Tue, 14 Apr 2026 19:08:40 GMT
 Content-Type: application/json
 Content-Length: 319
 Connection: close
@@ -276,7 +275,7 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testArrayLowerBound" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.064">
+  <testcase name="testArrayLowerBound" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.093">
     <system-out><![CDATA[Request method:	POST
 Request URI:	http://localhost:8002/api/coach
 Proxy:			<none>
@@ -294,7 +293,7 @@ Body:
 }
 HTTP/1.1 200 OK
 Server: Werkzeug/3.1.8 Python/3.9.6
-Date: Mon, 13 Apr 2026 18:34:05 GMT
+Date: Tue, 14 Apr 2026 19:08:40 GMT
 Content-Type: application/json
 Content-Length: 308
 Connection: close
@@ -310,7 +309,7 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testArrayUpperBound" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.053">
+  <testcase name="testArrayUpperBound" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.107">
     <system-out><![CDATA[Request method:	POST
 Request URI:	http://localhost:8002/api/coach
 Proxy:			<none>
@@ -328,7 +327,7 @@ Body:
 }
 HTTP/1.1 200 OK
 Server: Werkzeug/3.1.8 Python/3.9.6
-Date: Mon, 13 Apr 2026 18:34:05 GMT
+Date: Tue, 14 Apr 2026 19:08:41 GMT
 Content-Type: application/json
 Content-Length: 308
 Connection: close
@@ -344,7 +343,7 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testArrayViolationBug" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.054">
+  <testcase name="testArrayViolationBug" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.11">
     <system-out><![CDATA[Request method:	POST
 Request URI:	http://localhost:8002/api/coach
 Proxy:			<none>
@@ -362,7 +361,7 @@ Body:
 }
 HTTP/1.1 200 OK
 Server: Werkzeug/3.1.8 Python/3.9.6
-Date: Mon, 13 Apr 2026 18:34:05 GMT
+Date: Tue, 14 Apr 2026 19:08:41 GMT
 Content-Type: application/json
 Content-Length: 188
 Connection: close
@@ -381,7 +380,7 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testGibberishInput" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.061">
+  <testcase name="testGibberishInput" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.108">
     <system-out><![CDATA[Request method:	POST
 Request URI:	http://localhost:8002/api/coach
 Proxy:			<none>
@@ -399,7 +398,7 @@ Body:
 }
 HTTP/1.1 200 OK
 Server: Werkzeug/3.1.8 Python/3.9.6
-Date: Mon, 13 Apr 2026 18:34:05 GMT
+Date: Tue, 14 Apr 2026 19:08:41 GMT
 Content-Type: application/json
 Content-Length: 238
 Connection: close
@@ -414,7 +413,7 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testEmptyString" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.053">
+  <testcase name="testEmptyString" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.11">
     <system-out><![CDATA[Request method:	POST
 Request URI:	http://localhost:8002/api/coach
 Proxy:			<none>
@@ -432,7 +431,7 @@ Body:
 }
 HTTP/1.1 200 OK
 Server: Werkzeug/3.1.8 Python/3.9.6
-Date: Mon, 13 Apr 2026 18:34:05 GMT
+Date: Tue, 14 Apr 2026 19:08:41 GMT
 Content-Type: application/json
 Content-Length: 308
 Connection: close
@@ -448,7 +447,7 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testPromptInjection" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.068">
+  <testcase name="testPromptInjection" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.262">
     <system-out><![CDATA[Request method:	POST
 Request URI:	http://localhost:8002/api/coach
 Proxy:			<none>
@@ -466,7 +465,7 @@ Body:
 }
 HTTP/1.1 200 OK
 Server: Werkzeug/3.1.8 Python/3.9.6
-Date: Mon, 13 Apr 2026 18:34:05 GMT
+Date: Tue, 14 Apr 2026 19:08:41 GMT
 Content-Type: application/json
 Content-Length: 308
 Connection: close
@@ -482,7 +481,7 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testResponsePerformance" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.09">
+  <testcase name="testResponsePerformance" classname="com.aigoalcoach.tests.GoalCoachApiTests" time="0.161">
     <system-out><![CDATA[Request method:	POST
 Request URI:	http://localhost:8002/api/coach
 Proxy:			<none>
@@ -500,7 +499,7 @@ Body:
 }
 HTTP/1.1 200 OK
 Server: Werkzeug/3.1.8 Python/3.9.6
-Date: Mon, 13 Apr 2026 18:34:05 GMT
+Date: Tue, 14 Apr 2026 19:08:41 GMT
 Content-Type: application/json
 Content-Length: 319
 Connection: close

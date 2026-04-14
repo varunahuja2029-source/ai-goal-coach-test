@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.85 s <<< FAILURE! -- in TestSuite
-com.aigoalcoach.tests.GoalCoachApiTests.testMissingFieldBug -- Time elapsed: 0.095 s <<< FAILURE!
+Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 11.25 s <<< FAILURE! -- in TestSuite
+com.aigoalcoach.tests.GoalCoachApiTests.testMissingFieldBug -- Time elapsed: 0.106 s <<< FAILURE!
 java.lang.AssertionError: 
 [[BUG-002] confidence_score should be MISSING from this response (simulated defect – this assertion deliberately captures the bug state)] 
 expected: null

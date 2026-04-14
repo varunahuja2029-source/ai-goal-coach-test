@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    TestNG Suite Definition – AI Goal Coach API Tests
+    ──────────────────────────────────────────────────
+    Groups all 12 tests into three logical test tags that map to the
+    Epic > Feature > Story Allure hierarchy:
+
+      1. schema-validation    – contract & type checks         (TC-01 to TC-03)
+      2. business-logic       – happy paths & boundaries       (TC-04 to TC-08)
+      3. adversarial          – edge cases & performance       (TC-09 to TC-12)
+
+    Run a specific group only:
+      mvn clean test -Dgroups=schema-validation
+      mvn clean test -Dgroups=adversarial
+-->
+<suite name="AI Goal Coach – Full Regression Suite"
+       verbose="2"
+       parallel="false"
+       thread-count="1">
+
+    <listeners>
+        <!-- Allure listener – attaches step-level metadata to results -->
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Schema and Contract Validation">
+        <groups>
+            <define name="schema-validation">
+                <include name="schema-validation"/>
+            </define>
+            <run>
+                <include name="schema-validation"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.aigoalcoach.tests.GoalCoachApiTests">
+                <methods>
+                    <include name="testValidSchema"/>
+                    <include name="testMissingFieldBug"/>
+                    <include name="testInvalidDataType"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Business Logic and Boundaries">
+        <classes>
+            <class name="com.aigoalcoach.tests.GoalCoachApiTests">
+                <methods>
+                    <include name="testHappyPathSales"/>
+                    <include name="testHappyPathUpskill"/>
+                    <include name="testArrayLowerBound"/>
+                    <include name="testArrayUpperBound"/>
+                    <include name="testArrayViolationBug"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Adversarial and Edge Cases">
+        <classes>
+            <class name="com.aigoalcoach.tests.GoalCoachApiTests">
+                <methods>
+                    <include name="testGibberishInput"/>
+                    <include name="testEmptyString"/>
+                    <include name="testPromptInjection"/>
+                    <include name="testResponsePerformance"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

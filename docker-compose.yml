@@ -1,0 +1,71 @@
+version: "3.9"
+
+# ──────────────────────────────────────────────────────────────────────────────
+# AI Goal Coach – Test Suite Orchestration
+#
+# Services
+#   test-runner   – Builds the Maven project and executes all 12 TestNG tests
+#                   against the Flask API running on the Docker host.
+#   allure-report – Generates and serves the Allure HTML report on :8080 after
+#                   tests complete. Depends on the test-runner volume for results.
+#
+# Usage
+#   Run tests only:
+#     docker compose up --build test-runner
+#
+#   Run tests AND view report:
+#     docker compose up --build
+#     open http://localhost:8080
+#
+#   Clean up:
+#     docker compose down -v
+# ──────────────────────────────────────────────────────────────────────────────
+
+services:
+
+  # ── Test runner ─────────────────────────────────────────────────────────────
+  test-runner:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runner
+    container_name: aicoach-test-runner
+    environment:
+      # Override to point at a remote SUT if needed
+      - API_HOST=http://host.docker.internal:8002
+    extra_hosts:
+      # Linux: lets the container resolve host.docker.internal → host gateway
+      - "host.docker.internal:host-gateway"
+    volumes:
+      # Persist Allure results so the report service can pick them up
+      - allure-results:/build/target/allure-results
+      # Expose Surefire XML reports to the host for CI artefact collection
+      - ./target/surefire-reports:/build/target/surefire-reports
+    networks:
+      - test-net
+
+  # ── Allure report server ─────────────────────────────────────────────────────
+  allure-report:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: report
+    container_name: aicoach-allure-report
+    ports:
+      - "8080:8080"
+    volumes:
+      # Re-use the results written by the test-runner
+      - allure-results:/build/target/allure-results
+    depends_on:
+      test-runner:
+        condition: service_completed_successfully
+    networks:
+      - test-net
+
+volumes:
+  allure-results:
+    driver: local
+
+networks:
+  test-net:
+    driver: bridge

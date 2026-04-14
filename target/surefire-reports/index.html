@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" class="navigator-link">
+              <span class="suite-name border-failed">AI Goal Coach – Full Regression Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-AI_Goal_Coach___Full_Regression_Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-AI_Goal_Coach___Full_Regression_Suite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-AI_Goal_Coach___Full_Regression_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-AI_Goal_Coach___Full_Regression_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-AI_Goal_Coach___Full_Regression_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-AI_Goal_Coach___Full_Regression_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-AI_Goal_Coach___Full_Regression_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 1 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" class="hide-methods failed suite-AI_Goal_Coach___Full_Regression_Suite"> (hide)</a> <!-- hide-methods failed suite-AI_Goal_Coach___Full_Regression_Suite -->
+                      <a href="#" panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" class="show-methods failed suite-AI_Goal_Coach___Full_Regression_Suite"> (show)</a> <!-- show-methods failed suite-AI_Goal_Coach___Full_Regression_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-AI_Goal_Coach___Full_Regression_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" title="com.aigoalcoach.tests.GoalCoachApiTests" class="method navigator-link" hash-for-method="testMissingFieldBug">testMissingFieldBug</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AI_Goal_Coach___Full_Regression_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" class="hide-methods passed suite-AI_Goal_Coach___Full_Regression_Suite"> (hide)</a> <!-- hide-methods passed suite-AI_Goal_Coach___Full_Regression_Suite -->
+                      <a href="#" panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" class="show-methods passed suite-AI_Goal_Coach___Full_Regression_Suite"> (show)</a> <!-- show-methods passed suite-AI_Goal_Coach___Full_Regression_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-AI_Goal_Coach___Full_Regression_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" title="com.aigoalcoach.tests.GoalCoachApiTests" class="method navigator-link" hash-for-method="testArrayLowerBound">testArrayLowerBound</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" title="com.aigoalcoach.tests.GoalCoachApiTests" class="method navigator-link" hash-for-method="testArrayUpperBound">testArrayUpperBound</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" title="com.aigoalcoach.tests.GoalCoachApiTests" class="method navigator-link" hash-for-method="testArrayViolationBug">testArrayViolationBug</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" title="com.aigoalcoach.tests.GoalCoachApiTests" class="method navigator-link" hash-for-method="testEmptyString">testEmptyString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" title="com.aigoalcoach.tests.GoalCoachApiTests" class="method navigator-link" hash-for-method="testGibberishInput">testGibberishInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" title="com.aigoalcoach.tests.GoalCoachApiTests" class="method navigator-link" hash-for-method="testHappyPathSales">testHappyPathSales</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" title="com.aigoalcoach.tests.GoalCoachApiTests" class="method navigator-link" hash-for-method="testHappyPathUpskill">testHappyPathUpskill</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" title="com.aigoalcoach.tests.GoalCoachApiTests" class="method navigator-link" hash-for-method="testInvalidDataType">testInvalidDataType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" title="com.aigoalcoach.tests.GoalCoachApiTests" class="method navigator-link" hash-for-method="testPromptInjection">testPromptInjection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" title="com.aigoalcoach.tests.GoalCoachApiTests" class="method navigator-link" hash-for-method="testResponsePerformance">testResponsePerformance</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" title="com.aigoalcoach.tests.GoalCoachApiTests" class="method navigator-link" hash-for-method="testValidSchema">testValidSchema</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AI_Goal_Coach___Full_Regression_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AI_Goal_Coach___Full_Regression_Suite" class="panel AI_Goal_Coach___Full_Regression_Suite">
+          <div class="suite-AI_Goal_Coach___Full_Regression_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.aigoalcoach.tests.GoalCoachApiTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMissingFieldBug">
+                  </a> <!-- testMissingFieldBug -->
+                  <span class="method-name">testMissingFieldBug</span>
+                  <div class="stack-trace">java.lang.AssertionError: [[BUG-002] confidence_score should be MISSING from this response (simulated defect – this assertion deliberately captures the bug state)] 
+expected: null
+ but was: 5
+	at com.aigoalcoach.tests.GoalCoachApiTests.testMissingFieldBug(GoalCoachApiTests.java:112)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC-02 | [BUG-002] confidence_score missing from response – SIMULATED FAIL)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AI_Goal_Coach___Full_Regression_Suite-class-failed -->
+          <div class="suite-AI_Goal_Coach___Full_Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.aigoalcoach.tests.GoalCoachApiTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testArrayLowerBound">
+                  </a> <!-- testArrayLowerBound -->
+                  <span class="method-name">testArrayLowerBound</span>
+                  <em>
+(TC-06 | key_results contains >= 3 items (lower bound))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testArrayUpperBound">
+                  </a> <!-- testArrayUpperBound -->
+                  <span class="method-name">testArrayUpperBound</span>
+                  <em>
+(TC-07 | key_results contains <= 5 items (upper bound))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testArrayViolationBug">
+                  </a> <!-- testArrayViolationBug -->
+                  <span class="method-name">testArrayViolationBug</span>
+                  <em>
+(TC-08 | [BUG-001] key_results exceeds 5 items – SIMULATED FAIL)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyString">
+                  </a> <!-- testEmptyString -->
+                  <span class="method-name">testEmptyString</span>
+                  <em>
+(TC-10 | Empty string input returns safe sub-threshold fallback (score < 8))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGibberishInput">
+                  </a> <!-- testGibberishInput -->
+                  <span class="method-name">testGibberishInput</span>
+                  <em>
+(TC-09 | Gibberish input yields confidence_score <= 3)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHappyPathSales">
+                  </a> <!-- testHappyPathSales -->
+                  <span class="method-name">testHappyPathSales</span>
+                  <em>
+(TC-04 | Happy path – 'sales' produces confident, bounded plan)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHappyPathUpskill">
+                  </a> <!-- testHappyPathUpskill -->
+                  <span class="method-name">testHappyPathUpskill</span>
+                  <em>
+(TC-05 | Happy path – 'upskill' produces confident, bounded plan)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidDataType">
+                  </a> <!-- testInvalidDataType -->
+                  <span class="method-name">testInvalidDataType</span>
+                  <em>
+(TC-03 | confidence_score is Integer, not String or Float)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPromptInjection">
+                  </a> <!-- testPromptInjection -->
+                  <span class="method-name">testPromptInjection</span>
+                  <em>
+(TC-11 | Prompt injection is deflected to fallback scaffold (score < 8 or 4xx))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testResponsePerformance">
+                  </a> <!-- testResponsePerformance -->
+                  <span class="method-name">testResponsePerformance</span>
+                  <em>
+(TC-12 | API response time is < 1500 ms)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidSchema">
+                  </a> <!-- testValidSchema -->
+                  <span class="method-name">testValidSchema</span>
+                  <em>
+(TC-01 | All JSON schema fields exist with correct data types)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AI_Goal_Coach___Full_Regression_Suite-class-passed -->
+        </div> <!-- panel AI_Goal_Coach___Full_Regression_Suite -->
+        <div panel-name="test-xml-AI_Goal_Coach___Full_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/varunahuja/test-ai-agent/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;AI Goal Coach – Full Regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;io.qameta.allure.testng.AllureTestNg&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Schema and Contract Validation&quot; verbose=&quot;0&quot;&gt;
+    &lt;groups&gt;
+      &lt;define name=&quot;schema-validation&quot;&gt;
+        &lt;include name=&quot;schema-validation&quot;/&gt;
+      &lt;/define&gt; &lt;!-- schema-validation --&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;schema-validation&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.aigoalcoach.tests.GoalCoachApiTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testValidSchema&quot;/&gt;
+          &lt;include name=&quot;testMissingFieldBug&quot;/&gt;
+          &lt;include name=&quot;testInvalidDataType&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.aigoalcoach.tests.GoalCoachApiTests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Schema and Contract Validation --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Business Logic and Boundaries&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.aigoalcoach.tests.GoalCoachApiTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testHappyPathSales&quot;/&gt;
+          &lt;include name=&quot;testHappyPathUpskill&quot;/&gt;
+          &lt;include name=&quot;testArrayLowerBound&quot;/&gt;
+          &lt;include name=&quot;testArrayUpperBound&quot;/&gt;
+          &lt;include name=&quot;testArrayViolationBug&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.aigoalcoach.tests.GoalCoachApiTests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Business Logic and Boundaries --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Adversarial and Edge Cases&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.aigoalcoach.tests.GoalCoachApiTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testGibberishInput&quot;/&gt;
+          &lt;include name=&quot;testEmptyString&quot;/&gt;
+          &lt;include name=&quot;testPromptInjection&quot;/&gt;
+          &lt;include name=&quot;testResponsePerformance&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.aigoalcoach.tests.GoalCoachApiTests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Adversarial and Edge Cases --&gt;
+&lt;/suite&gt; &lt;!-- AI Goal Coach – Full Regression Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AI_Goal_Coach___Full_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AI Goal Coach – Full Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Schema and Contract Validation (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Business Logic and Boundaries (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Adversarial and Edge Cases (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AI_Goal_Coach___Full_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AI Goal Coach – Full Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AI_Goal_Coach___Full_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AI Goal Coach – Full Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AI_Goal_Coach___Full_Regression_Suite');
+function tableData_AI_Goal_Coach___Full_Regression_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testValidSchema')
+data.setCell(0, 2, 'com.aigoalcoach.tests.GoalCoachApiTests')
+data.setCell(0, 3, 4244);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testHappyPathUpskill')
+data.setCell(1, 2, 'com.aigoalcoach.tests.GoalCoachApiTests')
+data.setCell(1, 3, 79);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testMissingFieldBug')
+data.setCell(2, 2, 'com.aigoalcoach.tests.GoalCoachApiTests')
+data.setCell(2, 3, 75);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testHappyPathSales')
+data.setCell(3, 2, 'com.aigoalcoach.tests.GoalCoachApiTests')
+data.setCell(3, 3, 68);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testResponsePerformance')
+data.setCell(4, 2, 'com.aigoalcoach.tests.GoalCoachApiTests')
+data.setCell(4, 3, 68);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testPromptInjection')
+data.setCell(5, 2, 'com.aigoalcoach.tests.GoalCoachApiTests')
+data.setCell(5, 3, 65);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testArrayLowerBound')
+data.setCell(6, 2, 'com.aigoalcoach.tests.GoalCoachApiTests')
+data.setCell(6, 3, 62);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testGibberishInput')
+data.setCell(7, 2, 'com.aigoalcoach.tests.GoalCoachApiTests')
+data.setCell(7, 3, 59);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testInvalidDataType')
+data.setCell(8, 2, 'com.aigoalcoach.tests.GoalCoachApiTests')
+data.setCell(8, 3, 54);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testArrayViolationBug')
+data.setCell(9, 2, 'com.aigoalcoach.tests.GoalCoachApiTests')
+data.setCell(9, 3, 52);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testArrayUpperBound')
+data.setCell(10, 2, 'com.aigoalcoach.tests.GoalCoachApiTests')
+data.setCell(10, 3, 51);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testEmptyString')
+data.setCell(11, 2, 'com.aigoalcoach.tests.GoalCoachApiTests')
+data.setCell(11, 3, 49);
+window.suiteTableData['AI_Goal_Coach___Full_Regression_Suite']= { tableData: data, tableDiv: 'times-div-AI_Goal_Coach___Full_Regression_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <div id="times-div-AI_Goal_Coach___Full_Regression_Suite">
+              </div> <!-- times-div-AI_Goal_Coach___Full_Regression_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AI_Goal_Coach___Full_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AI Goal Coach – Full Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AI_Goal_Coach___Full_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">24 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.aigoalcoach.tests.GoalCoachApiTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testValidSchema</span>
+                <br/>
+                <span class="ignored-method-name">testHappyPathUpskill</span>
+                <br/>
+                <span class="ignored-method-name">testArrayUpperBound</span>
+                <br/>
+                <span class="ignored-method-name">testGibberishInput</span>
+                <br/>
+                <span class="ignored-method-name">testHappyPathSales</span>
+                <br/>
+                <span class="ignored-method-name">testPromptInjection</span>
+                <br/>
+                <span class="ignored-method-name">testGibberishInput</span>
+                <br/>
+                <span class="ignored-method-name">testInvalidDataType</span>
+                <br/>
+                <span class="ignored-method-name">testMissingFieldBug</span>
+                <br/>
+                <span class="ignored-method-name">testArrayLowerBound</span>
+                <br/>
+                <span class="ignored-method-name">testArrayViolationBug</span>
+                <br/>
+                <span class="ignored-method-name">testInvalidDataType</span>
+                <br/>
+                <span class="ignored-method-name">testPromptInjection</span>
+                <br/>
+                <span class="ignored-method-name">testArrayLowerBound</span>
+                <br/>
+                <span class="ignored-method-name">testMissingFieldBug</span>
+                <br/>
+                <span class="ignored-method-name">testResponsePerformance</span>
+                <br/>
+                <span class="ignored-method-name">testHappyPathUpskill</span>
+                <br/>
+                <span class="ignored-method-name">testArrayViolationBug</span>
+                <br/>
+                <span class="ignored-method-name">testArrayUpperBound</span>
+                <br/>
+                <span class="ignored-method-name">testHappyPathSales</span>
+                <br/>
+                <span class="ignored-method-name">testEmptyString</span>
+                <br/>
+                <span class="ignored-method-name">testValidSchema</span>
+                <br/>
+                <span class="ignored-method-name">testResponsePerformance</span>
+                <br/>
+                <span class="ignored-method-name">testEmptyString</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AI_Goal_Coach___Full_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.aigoalcoach.tests.GoalCoachApiTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">configureSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">testValidSchema</span>
+                <span class="method-start">1687 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testMissingFieldBug</span>
+                <span class="method-start">6103 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInvalidDataType</span>
+                <span class="method-start">6195 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testHappyPathSales</span>
+                <span class="method-start">6332 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testHappyPathUpskill</span>
+                <span class="method-start">6404 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testArrayLowerBound</span>
+                <span class="method-start">6487 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testArrayUpperBound</span>
+                <span class="method-start">6553 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testArrayViolationBug</span>
+                <span class="method-start">6607 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGibberishInput</span>
+                <span class="method-start">6673 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmptyString</span>
+                <span class="method-start">6736 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPromptInjection</span>
+                <span class="method-start">6789 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testResponsePerformance</span>
+                <span class="method-start">6858 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

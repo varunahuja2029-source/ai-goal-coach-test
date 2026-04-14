@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">AI Goal Coach – Full Regression Suite</th></tr>
+<tr><td><a href="#t0">Schema and Contract Validation</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">4,629</td><td>schema-validation</td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Business Logic and Boundaries</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">333</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Adversarial and Edge Cases</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">258</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">11</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">5,220</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AI Goal Coach – Full Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Schema and Contract Validation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.aigoalcoach.tests.GoalCoachApiTests</td><td><a href="#m0">testMissingFieldBug</a></td><td rowspan="1">1776105244864</td><td rowspan="1">75</td></tr><tr><th colspan="4">Schema and Contract Validation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.aigoalcoach.tests.GoalCoachApiTests</td><td><a href="#m1">testInvalidDataType</a></td><td rowspan="1">1776105244956</td><td rowspan="1">54</td></tr><tr class="passedeven"><td><a href="#m2">testValidSchema</a></td><td rowspan="1">1776105240448</td><td rowspan="1">4244</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Business Logic and Boundaries &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.aigoalcoach.tests.GoalCoachApiTests</td><td><a href="#m3">testArrayLowerBound</a></td><td rowspan="1">1776105245248</td><td rowspan="1">62</td></tr><tr class="passedeven"><td><a href="#m4">testArrayUpperBound</a></td><td rowspan="1">1776105245314</td><td rowspan="1">51</td></tr><tr class="passedeven"><td><a href="#m5">testArrayViolationBug</a></td><td rowspan="1">1776105245368</td><td rowspan="1">52</td></tr><tr class="passedeven"><td><a href="#m6">testHappyPathSales</a></td><td rowspan="1">1776105245093</td><td rowspan="1">68</td></tr><tr class="passedeven"><td><a href="#m7">testHappyPathUpskill</a></td><td rowspan="1">1776105245165</td><td rowspan="1">79</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Adversarial and Edge Cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.aigoalcoach.tests.GoalCoachApiTests</td><td><a href="#m8">testEmptyString</a></td><td rowspan="1">1776105245497</td><td rowspan="1">49</td></tr><tr class="passedeven"><td><a href="#m9">testGibberishInput</a></td><td rowspan="1">1776105245434</td><td rowspan="1">59</td></tr><tr class="passedeven"><td><a href="#m10">testPromptInjection</a></td><td rowspan="1">1776105245550</td><td rowspan="1">65</td></tr><tr class="passedeven"><td><a href="#m11">testResponsePerformance</a></td><td rowspan="1">1776105245619</td><td rowspan="1">68</td></tr></tbody>
+</table>
+<h2>Schema and Contract Validation</h2><h3 id="m0">com.aigoalcoach.tests.GoalCoachApiTests#testMissingFieldBug</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: [[BUG-002] confidence_score should be MISSING from this response (simulated defect – this assertion deliberately captures the bug state)] 
+expected: null
+ but was: 5
+	at com.aigoalcoach.tests.GoalCoachApiTests.testMissingFieldBug(GoalCoachApiTests.java:112)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.aigoalcoach.tests.GoalCoachApiTests#testInvalidDataType</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.aigoalcoach.tests.GoalCoachApiTests#testValidSchema</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Business Logic and Boundaries</h2><h3 id="m3">com.aigoalcoach.tests.GoalCoachApiTests#testArrayLowerBound</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.aigoalcoach.tests.GoalCoachApiTests#testArrayUpperBound</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.aigoalcoach.tests.GoalCoachApiTests#testArrayViolationBug</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.aigoalcoach.tests.GoalCoachApiTests#testHappyPathSales</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.aigoalcoach.tests.GoalCoachApiTests#testHappyPathUpskill</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Adversarial and Edge Cases</h2><h3 id="m8">com.aigoalcoach.tests.GoalCoachApiTests#testEmptyString</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.aigoalcoach.tests.GoalCoachApiTests#testGibberishInput</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.aigoalcoach.tests.GoalCoachApiTests#testPromptInjection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.aigoalcoach.tests.GoalCoachApiTests#testResponsePerformance</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
